@@ -1,4 +1,3 @@
-#setwd(dir="/home/hindol/Workspace/DataAnalysis/HW3/")
 source("rankhospital.R")
 df <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
 df <- df[c(2, 7, 11, 17, 23)]
@@ -23,7 +22,3 @@ rankall <- function(outcome, num = "best") {
   
   ranks
 }
-
-df <- df[order(df[, 4]), ]
-df <- df[!is.na(df[, 4]), ]
-#rstudio::viewData(df[df$State == state, ])

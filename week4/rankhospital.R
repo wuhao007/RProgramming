@@ -1,5 +1,3 @@
-#setwd(dir="/home/hindol/Workspace/DataAnalysis/HW3/")
-
 df <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
 df <- df[c(2, 7, 11, 17, 23)]
 df[, c(3, 4, 5)] <- sapply(df[, c(3, 4, 5)], as.numeric)

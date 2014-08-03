@@ -1,4 +1,3 @@
-#setwd(dir="/home/hindol/Workspace/DataAnalysis/HW3/")
 state <- "SC"
 outcome <- "heart attack"
 
